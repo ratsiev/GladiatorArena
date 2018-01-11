@@ -15,18 +15,36 @@ public class EquipUI : MonoBehaviour {
         equipmentScript = gladiator.GetComponent<Equipment>();
     }
 
-    // test
-    public void EquipHelmet() {  
-        changeGearScript.EquipItem("Head", "helmet_1");
+    private string currentItemType;
+    private int index;
+
+    public void ChangeEquipment(string itemType) {
+        List<Item> temp = ItemDatabase.instance.itemList.Where(x => x.ItemType == itemType).ToList();
+        if (currentItemType != itemType) {
+            currentItemType = itemType;
+            if (equipmentScript.equippedItems[itemType] != null)
+                index = GetItemIndex(itemType) == temp.Count - 1 ? temp.Count != 1 ? 0 : index : GetItemIndex(itemType) + 1;
+            else
+                index = 0;
+        }
+        if (index != temp.Count) {
+            for (int i = 0; i < temp.Count; i++) {
+                if (i == index) {
+                    changeGearScript.EquipItem(itemType, temp[i].Slug);
+                    index++;
+                    break;
+                }
+            }
+        } else {
+            changeGearScript.UnequipItem(temp[index - 1].ItemType);
+            index = 0;
+        }
+
     }
 
-    // test
-    public void RemoveHelmet() { 
-        changeGearScript.UnequipItem("Head");
-    }
-
-    private void ChangeEquipment(string type) {
-        List<Item> temp = ItemDatabase.instance.itemList.Where(x => x.ItemType == type).ToList();
+    private int GetItemIndex(string itemType) {
+        List<Item> temp = ItemDatabase.instance.itemList.Where(x => x.ItemType == itemType).ToList();
+        return temp.IndexOf(equipmentScript.equippedItems[itemType].item);
     }
 
 }

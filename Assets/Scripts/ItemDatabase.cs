@@ -40,5 +40,4 @@ public class ItemDatabase : MonoBehaviour {
         return itemList.Find(x => x.Slug == slugName);
     }
 
-
 }

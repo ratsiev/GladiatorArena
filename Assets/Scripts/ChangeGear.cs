@@ -5,24 +5,20 @@ public class ChangeGear : MonoBehaviour {
 
     private void Start() {
         equipmentScript = GetComponent<Equipment>();
-        //equip stuff
-        // EquipItem("Legs", "pants"); 
     }
 
-    public void EquipItem(string itemType, string itemSlug) {
-        Item tempItem = ItemDatabase.instance.FetchItemBySlug(itemSlug);      
-        if (WearingItem(tempItem))
-            UnequipItem(tempItem.ItemType);
-        equipmentScript.AddEquipment(tempItem);
+    public void EquipItem(string itemType, string itemSlug) {  
+        UnequipItem(itemType);
+        equipmentScript.AddEquipment(ItemDatabase.instance.FetchItemBySlug(itemSlug));
     }
 
     public void UnequipItem(string itemType) {
-        equipmentScript.RemoveEquipment(itemType);
+        if (WearingItem(itemType))
+            equipmentScript.RemoveEquipment(itemType);
     }
 
-    private bool WearingItem(Item item) {
-        return equipmentScript.equippedItems[item.ItemType] != null;
+    private bool WearingItem(string itemType) {
+        return equipmentScript.equippedItems[itemType] != null;
     }
-
 
 }

@@ -1,255 +1,199 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ItemDataBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Item>
-    <Name></Name>
-    <Description></Description>
-    <Slug>naked_torso</Slug>
-    <Type>Torso</Type>
-    <Prefab></Prefab>
-  </Item>
-  <Item>
-    <Name></Name>
-    <Description></Description>
-    <Slug>naked_head</Slug>
-    <Type>Head</Type>
-    <Prefab></Prefab>
-  </Item>
-  <Item>
-    <Name></Name>
-    <Description></Description>
-    <Slug>empty_hand_r</Slug>
-    <Type>RightHand</Type>
-    <Prefab></Prefab>
-  </Item>
-  <Item>
-    <Name></Name>
-    <Description></Description>
-    <Slug>naked_arm_1_r</Slug>
-    <Type>RightArm1</Type>
-    <Prefab></Prefab>
-  </Item>
-  <Item>
-    <Name></Name>
-    <Description></Description>
-    <Slug>naked_arm_2_r</Slug>
-    <Type>RightArm2</Type>
-    <Prefab></Prefab>
-  </Item>
-  <Item>
-    <Name></Name>
-    <Description></Description>
-    <Slug>naked_shoulder_r</Slug>
-    <Type>RightShoulder</Type>
-    <Prefab></Prefab>
-  </Item>
-  <Item>
-    <Name></Name>
-    <Description></Description>
-    <Slug>empty_hand_l</Slug>
-    <Type>LeftHand</Type>
-    <Prefab></Prefab>
-  </Item>
-  <Item>
-    <Name></Name>
-    <Description></Description>
-    <Slug>naked_arm_1_l</Slug>
-    <Type>LeftArm1</Type>
-    <Prefab></Prefab>
-  </Item>
-  <Item>
-    <Name></Name>
-    <Description></Description>
-    <Slug>naked_arm_2_l</Slug>
-    <Type>LeftArm2</Type>
-    <Prefab></Prefab>
-  </Item>
-  <Item>
-    <Name></Name>
-    <Description></Description>
-    <Slug>naked_shoulder_l</Slug>
-    <Type>LeftShoulder</Type>
-    <Prefab></Prefab>
-  </Item>
-  <Item>
-    <Name></Name>
-    <Description></Description>
-    <Slug>naked_leg_1_r</Slug>
-    <Type>RightLeg1</Type>
-    <Prefab></Prefab>
-  </Item>
-  <Item>
-    <Name></Name>
-    <Description></Description>
-    <Slug>naked_leg_2_r</Slug>
-    <Type>RightLeg2</Type>
-    <Prefab></Prefab>
-  </Item>
-  <Item>
-    <Name></Name>
-    <Description></Description>
-    <Slug>naked_leg_1_l</Slug>
-    <Type>LeftLeg1</Type>
-    <Prefab></Prefab>
-  </Item>
-  <Item>
-    <Name></Name>
-    <Description></Description>
-    <Slug>naked_leg_2_l</Slug>
-    <Type>LeftLeg2</Type>
-    <Prefab></Prefab>
-  </Item>
-  <Item>
-    <Name>Helmet 1</Name>
-    <Description></Description>
-    <Slug>helmet_1</Slug>
-    <Type>Head</Type>
-    <Prefab>Helmet_1</Prefab>
-  </Item>
-  <Item>
-    <Name>Helmet 2</Name>
-    <Description></Description>
-    <Slug>helmet_2</Slug>
-    <Type>Head</Type>
-    <Prefab>Helmet_2</Prefab>
-  </Item>
-  <Item>
-    <Name>Helmet 3</Name>
-    <Description></Description>
-    <Slug>helmet_3</Slug>
-    <Type>Head</Type>
-    <Prefab>Helmet_3</Prefab>
-  </Item>
-  <Item>
-    <Name>Helmet 4</Name>
-    <Description></Description>
-    <Slug>helmet_4</Slug>
-    <Type>Head</Type>
-    <Prefab>Helmet_4</Prefab>
-  </Item>
-  <Item>
-    <Name>Arm Armour 1 R</Name>
-    <Description></Description>
-    <Slug>arm_1_r</Slug>
-    <Type>RightArm1</Type>
-    <Prefab>R_Arm_1</Prefab>
-  </Item>
-  <Item>
-    <Name>Arm Armour 2 R</Name>
-    <Description></Description>
-    <Slug>arm_2_r</Slug>
-    <Type>RightArm1</Type>
-    <Prefab>R_Arm_2</Prefab>
-  </Item>
-  <Item>
-    <Name>Arm Armour 3 R</Name>
-    <Description></Description>
-    <Slug>arm_3_r</Slug>
-    <Type>RightArm2</Type>
-    <Prefab>R_Arm_3</Prefab>
-  </Item>
-  <Item>
-    <Name>Shoulder Armour 1 R</Name>
-    <Description></Description>
-    <Slug>shoulder_1_r</Slug>
-    <Type>RightShoulder</Type>
-    <Prefab>R_Shoulder_1</Prefab>
-  </Item>
-  <Item>
-    <Name>Shoulder Armour 2 R</Name>
-    <Description></Description>
-    <Slug>shoulder_2_r</Slug>
-    <Type>RightShoulder</Type>
-    <Prefab>R_Shoulder_2</Prefab>
-  </Item>
-  <Item>
-    <Name>Shoulder Armour 3 R</Name>
-    <Description></Description>
-    <Slug>shoulder_3_r</Slug>
-    <Type>RightShoulder</Type>
-    <Prefab>R_Shoulder_3</Prefab>
-  </Item>
-  <Item>
-    <Name>Shoulder Armour 4 R</Name>
-    <Description></Description>
-    <Slug>shoulder_4_r</Slug>
-    <Type>RightShoulder</Type>
-    <Prefab>R_Shoulder_4</Prefab>
-  </Item>
-  <Item>
-    <Name>Arm Armour 1 L</Name>
-    <Description></Description>
-    <Slug>arm_1_l</Slug>
-    <Type>LeftArm1</Type>
-    <Prefab>L_Arm_1</Prefab>
-  </Item>
-  <Item>
-    <Name>Arm Armour 2 L</Name>
-    <Description></Description>
-    <Slug>arm_2_l</Slug>
-    <Type>LeftArm1</Type>
-    <Prefab>L_Arm_2</Prefab>
-  </Item>
-  <Item>
-    <Name>Arm Armour 3 L</Name>
-    <Description></Description>
-    <Slug>arm_3_l</Slug>
-    <Type>LeftArm2</Type>
-    <Prefab>L_Arm_3</Prefab>
-  </Item>
-  <Item>
-    <Name>Shoulder Armour 1 L</Name>
-    <Description></Description>
-    <Slug>shoulder_1_l</Slug>
-    <Type>LeftShoulder</Type>
-    <Prefab>L_Shoulder_1</Prefab>
-  </Item>
-  <Item>
-    <Name>Shoulder Armour 2 L</Name>
-    <Description></Description>
-    <Slug>shoulder_2_l</Slug>
-    <Type>LeftShoulder</Type>
-    <Prefab>L_Shoulder_2</Prefab>
-  </Item>
-  <Item>
-    <Name>Shoulder Armour 3 L</Name>
-    <Description></Description>
-    <Slug>shoulder_3_l</Slug>
-    <Type>LeftShoulder</Type>
-    <Prefab>L_Shoulder_3</Prefab>
-  </Item>
-  <Item>
-    <Name>Shoulder Armour 4 L</Name>
-    <Description></Description>
-    <Slug>shoulder_4_l</Slug>
-    <Type>LeftShoulder</Type>
-    <Prefab>L_Shoulder_4</Prefab>
-  </Item>
-  <Item>
-    <Name>Gladius</Name>
-    <Description></Description>
-    <Slug>sword_1</Slug>
-    <Type>RightHand</Type>
-    <Prefab>Gladius_1</Prefab>
-  </Item>
-  <Item>
-    <Name>Stick</Name>
-    <Description></Description>
-    <Slug>sword_2</Slug>
-    <Type>LeftHand</Type>
-    <Prefab>L_Object</Prefab>
-  </Item>
-  <Item>
-    <Name>Torso 1</Name>
-    <Description></Description>
-    <Slug>torso_1</Slug>
-    <Type>Torso</Type>
-    <Prefab>Torso_1</Prefab>
-  </Item>
-  <Item>
-    <Name>Torso 2</Name>
-    <Description></Description>
-    <Slug>torso_2</Slug>
-    <Type>Torso</Type>
-    <Prefab>Torso_2</Prefab>
-  </Item>
+	<Item>
+		<Name>Helmet 1</Name>
+		<Description>Helmet 1</Description>
+		<Slug>helmet_1</Slug>
+		<Type>Head</Type>
+		<Prefab>Helmet_1</Prefab>
+	</Item>
+	<Item>
+		<Name>Helmet 2</Name>
+		<Description>Helmet 2</Description>
+		<Slug>helmet_2</Slug>
+		<Type>Head</Type>
+		<Prefab>Helmet_2</Prefab>
+	</Item>
+	<Item>
+		<Name>Helmet 3</Name>
+		<Description>Helmet 3</Description>
+		<Slug>helmet_3</Slug>
+		<Type>Head</Type>
+		<Prefab>Helmet_3</Prefab>
+	</Item>
+	<Item>
+		<Name>Helmet 4</Name>
+		<Description>Helmet 4</Description>
+		<Slug>helmet_4</Slug>
+		<Type>Head</Type>
+		<Prefab>Helmet_4</Prefab>
+	</Item>
+	<Item>
+		<Name>Arm Armour 1 R</Name>
+		<Description>Arm Armour 1 R</Description>
+		<Slug>arm_1_r</Slug>
+		<Type>RightArm1</Type>
+		<Prefab>R_Arm_1</Prefab>
+	</Item>
+	<Item>
+		<Name>Arm Armour 2 R</Name>
+		<Description>Arm Armour 2 R</Description>
+		<Slug>arm_2_r</Slug>
+		<Type>RightArm2</Type>
+		<Prefab>R_Arm_2</Prefab>
+	</Item>
+	<Item>
+		<Name>Arm Armour 3 R</Name>
+		<Description>Arm Armour 3 R</Description>
+		<Slug>arm_3_r</Slug>
+		<Type>RightArm1</Type>
+		<Prefab>R_Arm_3</Prefab>
+	</Item>
+	<Item>
+		<Name>Shoulder Armour 1 R</Name>
+		<Description>Shoulder Armour 1 R</Description>
+		<Slug>shoulder_1_r</Slug>
+		<Type>RightShoulder</Type>
+		<Prefab>R_Shoulder_1</Prefab>
+	</Item>
+	<Item>
+		<Name>Shoulder Armour 2 R</Name>
+		<Description>Shoulder Armour 2 R</Description>
+		<Slug>shoulder_2_r</Slug>
+		<Type>RightShoulder</Type>
+		<Prefab>R_Shoulder_2</Prefab>
+	</Item>
+	<Item>
+		<Name>Shoulder Armour 3 R</Name>
+		<Description>Shoulder Armour 3 R</Description>
+		<Slug>shoulder_3_r</Slug>
+		<Type>RightShoulder</Type>
+		<Prefab>R_Shoulder_3</Prefab>
+	</Item>
+	<Item>
+		<Name>Shoulder Armour 4 R</Name>
+		<Description>Shoulder Armour 4 R</Description>
+		<Slug>shoulder_4_r</Slug>
+		<Type>RightShoulder</Type>
+		<Prefab>R_Shoulder_4</Prefab>
+	</Item>
+	<Item>
+		<Name>Arm Armour 1 L</Name>
+		<Description>Arm Armour 1 L</Description>
+		<Slug>arm_1_l</Slug>
+		<Type>LeftArm1</Type>
+		<Prefab>L_Arm_1</Prefab>
+	</Item>
+	<Item>
+		<Name>Arm Armour 2 L</Name>
+		<Description>Arm Armour 2 L</Description>
+		<Slug>arm_2_l</Slug>
+		<Type>LeftArm2</Type>
+		<Prefab>L_Arm_2</Prefab>
+	</Item>
+	<Item>
+		<Name>Arm Armour 3 L</Name>
+		<Description>Arm Armour 3 L</Description>
+		<Slug>arm_3_l</Slug>
+		<Type>LeftArm1</Type>
+		<Prefab>L_Arm_3</Prefab>
+	</Item>
+	<Item>
+		<Name>Shoulder Armour 1 L</Name>
+		<Description>Shoulder Armour 1 L</Description>
+		<Slug>shoulder_1_l</Slug>
+		<Type>LeftShoulder</Type>
+		<Prefab>L_Shoulder_1</Prefab>
+	</Item>
+	<Item>
+		<Name>Shoulder Armour 2 L</Name>
+		<Description>Shoulder Armour 2 L</Description>
+		<Slug>shoulder_2_l</Slug>
+		<Type>LeftShoulder</Type>
+		<Prefab>L_Shoulder_2</Prefab>
+	</Item>
+	<Item>
+		<Name>Shoulder Armour 3 L</Name>
+		<Description>Shoulder Armour 3 L</Description>
+		<Slug>shoulder_3_l</Slug>
+		<Type>LeftShoulder</Type>
+		<Prefab>L_Shoulder_3</Prefab>
+	</Item>
+	<Item>
+		<Name>Shoulder Armour 4 L</Name>
+		<Description>Shoulder Armour 4 L</Description>
+		<Slug>shoulder_4_l</Slug>
+		<Type>LeftShoulder</Type>
+		<Prefab>L_Shoulder_4</Prefab>
+	</Item>
+	<Item>
+		<Name>Gladius</Name>
+		<Description>Gladius</Description>
+		<Slug>sword_1</Slug>
+		<Type>RightHand</Type>
+		<Prefab>Gladius_1</Prefab>
+	</Item>
+	<Item>
+		<Name>Stick</Name>
+		<Description>Stick</Description>
+		<Slug>sword_2</Slug>
+		<Type>LeftHand</Type>
+		<Prefab>L_Object</Prefab>
+	</Item>
+	<Item>
+		<Name>Torso 1</Name>
+		<Description>Torso 1</Description>
+		<Slug>torso_1</Slug>
+		<Type>Torso</Type>
+		<Prefab>Torso_1</Prefab>
+	</Item>
+	<Item>
+		<Name>Torso 2</Name>
+		<Description>Torso 2</Description>
+		<Slug>torso_2</Slug>
+		<Type>Torso</Type>
+		<Prefab>Torso_2</Prefab>
+	</Item>
+	<Item>
+		<Name>Right Leg 1</Name>
+		<Description>Right Leg 1</Description>
+		<Slug>leg_1_r</Slug>
+		<Type>RightLeg1</Type>
+		<Prefab>R_Leg_1</Prefab>
+	</Item>
+	<Item>
+		<Name>Right Leg 2</Name>
+		<Description>Right Leg 2</Description>
+		<Slug>leg_2_r</Slug>
+		<Type>RightLeg1</Type>
+		<Prefab>R_Leg_2</Prefab>
+	</Item>
+	<Item>
+		<Name>Right Leg 3</Name>
+		<Description>Right Leg 3</Description>
+		<Slug>leg_3_r</Slug>
+		<Type>RightLeg2</Type>
+		<Prefab>R_Leg_3</Prefab>
+	</Item>
+	<Item>
+		<Name>Left Leg 1</Name>
+		<Description>Left Leg 1</Description>
+		<Slug>leg_1_l</Slug>
+		<Type>LeftLeg1</Type>
+		<Prefab>L_Leg_1</Prefab>
+	</Item>
+	<Item>
+		<Name>Left Leg 2</Name>
+		<Description>Left Leg 2</Description>
+		<Slug>leg_2_l</Slug>
+		<Type>LeftLeg1</Type>
+		<Prefab>L_Leg_2</Prefab>
+	</Item>
+	<Item>
+		<Name>Left Leg 3</Name>
+		<Description>Left Leg 3</Description>
+		<Slug>leg_3_l</Slug>
+		<Type>LeftLeg2</Type>
+		<Prefab>L_Leg_3</Prefab>
+	</Item>
 </ItemDataBase>
