@@ -27,7 +27,8 @@ public class Equipment : MonoBehaviour {
             {"RightLeg1", null},
             {"RightLeg2" , null},
             {"LeftLeg1" , null},
-            {"LeftLeg2" , null}
+            {"LeftLeg2" , null},
+            {"Shield" , null},
         };
 
     }

@@ -127,18 +127,32 @@
 		<Prefab>L_Shoulder_4</Prefab>
 	</Item>
 	<Item>
-		<Name>Gladius</Name>
-		<Description>Gladius</Description>
-		<Slug>sword_1</Slug>
+		<Name>Right Gladius 1</Name>
+		<Description>Right Gladius 1</Description>
+		<Slug>weapon_1_r</Slug>
 		<Type>RightHand</Type>
-		<Prefab>Gladius_1</Prefab>
+		<Prefab>R_Gladius_1</Prefab>
 	</Item>
 	<Item>
-		<Name>Stick</Name>
-		<Description>Stick</Description>
-		<Slug>sword_2</Slug>
+		<Name>Right Pugio 1</Name>
+		<Description>Right Pugio 1</Description>
+		<Slug>weapon_2_r</Slug>
+		<Type>RightHand</Type>
+		<Prefab>R_Pugio_1</Prefab>
+	</Item>
+	<Item>
+		<Name>Left Gladius 1</Name>
+		<Description>Left Gladius 1</Description>
+		<Slug>weapon_1_l</Slug>
 		<Type>LeftHand</Type>
-		<Prefab>L_Object</Prefab>
+		<Prefab>L_Gladius_1</Prefab>
+	</Item>
+	<Item>
+		<Name>Left Pugio 1</Name>
+		<Description>Left Pugio 1</Description>
+		<Slug>weapon_2_l</Slug>
+		<Type>LeftHand</Type>
+		<Prefab>L_Pugio_1</Prefab>
 	</Item>
 	<Item>
 		<Name>Torso 1</Name>
@@ -195,5 +209,26 @@
 		<Slug>leg_3_l</Slug>
 		<Type>LeftLeg2</Type>
 		<Prefab>L_Leg_3</Prefab>
+	</Item>
+	<Item>
+		<Name>Shield 1</Name>
+		<Description>Shield 1</Description>
+		<Slug>shield_1</Slug>
+		<Type>Shield</Type>
+		<Prefab>Shield_1</Prefab>
+	</Item>
+	<Item>
+		<Name>Shield 2</Name>
+		<Description>Shield 2</Description>
+		<Slug>shield_2</Slug>
+		<Type>Shield</Type>
+		<Prefab>Shield_2</Prefab>
+	</Item>
+	<Item>
+		<Name>Shield 3</Name>
+		<Description>Shield 3</Description>
+		<Slug>shield_3</Slug>
+		<Type>Shield</Type>
+		<Prefab>Shield_3</Prefab>
 	</Item>
 </ItemDataBase>
