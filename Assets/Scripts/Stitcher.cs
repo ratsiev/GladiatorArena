@@ -1,6 +1,4 @@
-﻿// with the exception of some minor additions, this is not the work of GameDevStudent. The script was downloaded from here: https://github.com/masterprompt/ModelStitching 
-
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections.Generic;
 
 public class Stitcher {
@@ -10,41 +8,45 @@ public class Stitcher {
     /// <param name="sourceClothing"></param>
     /// <param name="targetAvatar"></param>
     /// <returns>Newly created clothing on avatar</returns>
-
     public GameObject Stitch(GameObject sourceClothing, GameObject targetAvatar) {
-        TransformCatalog boneCatalog = new TransformCatalog(targetAvatar.transform);
-        SkinnedMeshRenderer[] skinnedMeshRenderers = sourceClothing.GetComponentsInChildren<SkinnedMeshRenderer>();
-        GameObject targetClothing = AddChild(sourceClothing, targetAvatar.transform);
-        foreach (SkinnedMeshRenderer sourceRenderer in skinnedMeshRenderers) {
-            SkinnedMeshRenderer targetRenderer = AddSkinnedMeshRenderer(sourceRenderer, targetClothing);
+        var boneCatalog = new TransformCatalog(targetAvatar.transform);
+        var skinnedMeshRenderers = sourceClothing.GetComponentsInChildren<SkinnedMeshRenderer>();
+        var targetClothing = AddChild(sourceClothing, targetAvatar.transform);
+
+
+        foreach (var sourceRenderer in skinnedMeshRenderers) {
+            var targetRenderer = AddSkinnedMeshRenderer(sourceRenderer, targetClothing);
             targetRenderer.bones = TranslateTransforms(sourceRenderer.bones, boneCatalog);
         }
         return targetClothing;
     }
 
     private GameObject AddChild(GameObject source, Transform parent) {
-        GameObject target = new GameObject(source.name);
-        target.transform.parent = parent;
-        target.transform.localPosition = source.transform.localPosition;
-        target.transform.localRotation = source.transform.localRotation;
-        target.transform.localScale = source.transform.localScale;
-        return target;
+        source.transform.parent = parent;
+
+        foreach (Transform child in source.transform) {
+            Object.Destroy(child.gameObject);
+        }
+
+        return source;
     }
 
     private SkinnedMeshRenderer AddSkinnedMeshRenderer(SkinnedMeshRenderer source, GameObject parent) {
-        SkinnedMeshRenderer target = parent.AddComponent<SkinnedMeshRenderer>();
+        GameObject meshObject = new GameObject(source.name);
+        meshObject.transform.parent = parent.transform;
+
+        var target = meshObject.AddComponent<SkinnedMeshRenderer>();
         target.sharedMesh = source.sharedMesh;
         target.materials = source.materials;
         return target;
     }
 
     private Transform[] TranslateTransforms(Transform[] sources, TransformCatalog transformCatalog) {
-        Transform[] targets = new Transform[sources.Length];
-        for (int index = 0; index < sources.Length; index++)
+        var targets = new Transform[sources.Length];
+        for (var index = 0; index < sources.Length; index++)
             targets[index] = DictionaryExtensions.Find(transformCatalog, sources[index].name);
         return targets;
     }
-
 
     #region TransformCatalog
     private class TransformCatalog : Dictionary<string, Transform> {
@@ -80,4 +82,3 @@ public class Stitcher {
     #endregion
 
 }
-

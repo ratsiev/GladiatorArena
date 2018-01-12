@@ -50,7 +50,6 @@ public class Equipment : MonoBehaviour {
     private void Wear(GameObject clothing, string itemType) {
         clothing = Instantiate(clothing);
         equippedItems[itemType].itemObject = stitcher.Stitch(clothing, avatar);
-        Destroy(clothing);
     }
 
 }
