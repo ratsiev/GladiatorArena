@@ -71,13 +71,6 @@
 		<Prefab>R_Shoulder_3</Prefab>
 	</Item>
 	<Item>
-		<Name>Shoulder Armour 4 R</Name>
-		<Description>Shoulder Armour 4 R</Description>
-		<Slug>shoulder_4_r</Slug>
-		<Type>RightShoulder</Type>
-		<Prefab>R_Shoulder_4</Prefab>
-	</Item>
-	<Item>
 		<Name>Arm Armour 1 L</Name>
 		<Description>Arm Armour 1 L</Description>
 		<Slug>arm_1_l</Slug>
@@ -118,13 +111,6 @@
 		<Slug>shoulder_3_l</Slug>
 		<Type>LeftShoulder</Type>
 		<Prefab>L_Shoulder_3</Prefab>
-	</Item>
-	<Item>
-		<Name>Shoulder Armour 4 L</Name>
-		<Description>Shoulder Armour 4 L</Description>
-		<Slug>shoulder_4_l</Slug>
-		<Type>LeftShoulder</Type>
-		<Prefab>L_Shoulder_4</Prefab>
 	</Item>
 	<Item>
 		<Name>Right Gladius 1</Name>
