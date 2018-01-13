@@ -1331,7 +1331,22 @@ ModelImporter:
     4300000: R_Gladius_1
     9500000: //RootNode
     13700000: R_Gladius_1
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black Iron
+    second: {fileID: 2100000, guid: dd49e6efea55eea4ab3baef35f0ceedf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Iron
+    second: {fileID: 2100000, guid: ebc8a3ebcb9792046abc0c393f2267e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Steel
+    second: {fileID: 2100000, guid: 36ef2c1e6cf9e1c44ac2a865bb83a5dd, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

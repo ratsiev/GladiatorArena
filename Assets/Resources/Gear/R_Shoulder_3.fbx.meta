@@ -1329,7 +1329,12 @@ ModelImporter:
     4300000: R_Shoulder_3
     9500000: //RootNode
     13700000: R_Shoulder_3
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 5e04aa0a909bfe34789f53a3c9c372b5, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

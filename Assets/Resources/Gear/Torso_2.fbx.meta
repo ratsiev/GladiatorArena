@@ -1329,7 +1329,12 @@ ModelImporter:
     4300000: Torso_2
     9500000: //RootNode
     13700000: Torso_2
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 090a712b4fca06b46801383c28ba013c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

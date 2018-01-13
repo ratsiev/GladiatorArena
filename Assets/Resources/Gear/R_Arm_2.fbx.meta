@@ -1329,7 +1329,12 @@ ModelImporter:
     4300000: R_Arm_2
     9500000: //RootNode
     13700000: R_Arm_2
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: f265963d088dde14f8686d1e372a003d, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

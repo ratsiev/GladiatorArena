@@ -1329,7 +1329,12 @@ ModelImporter:
     4300000: R_Leg_2
     9500000: //RootNode
     13700000: R_Leg_2
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 3e33b0fdf86be954fa19500a4405afe9, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
