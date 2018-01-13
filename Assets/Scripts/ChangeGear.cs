@@ -1,24 +1,24 @@
 ﻿using UnityEngine;
 
 public class ChangeGear : MonoBehaviour {
-    private Equipment equipmentScript;
+    private Equipment equipment;
 
     private void Start() {
-        equipmentScript = GetComponent<Equipment>();
+        equipment = GetComponent<Equipment>();
     }
 
     public void EquipItem(string itemType, string itemSlug) {  
         UnequipItem(itemType);
-        equipmentScript.AddEquipment(ItemDatabase.instance.FetchItemBySlug(itemSlug));
+        equipment.AddEquipment(ItemDatabase.instance.FetchItemBySlug(itemSlug));
     }
 
     public void UnequipItem(string itemType) {
         if (WearingItem(itemType))
-            equipmentScript.RemoveEquipment(itemType);
+            equipment.RemoveEquipment(itemType);
     }
 
     private bool WearingItem(string itemType) {
-        return equipmentScript.equippedItems[itemType] != null;
+        return equipment.equippedItems[itemType] != null;
     }
 
 }

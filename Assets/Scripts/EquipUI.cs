@@ -6,13 +6,13 @@ using System.Linq;
 
 public class EquipUI : MonoBehaviour {
     private GameObject gladiator;
-    private ChangeGear changeGearScript;
-    private Equipment equipmentScript;
+    private ChangeGear changeGear;
+    private Equipment equipment;
 
     private void Start() {
         gladiator = GameObject.FindGameObjectWithTag("Gladiator").gameObject;
-        changeGearScript = gladiator.GetComponent<ChangeGear>();
-        equipmentScript = gladiator.GetComponent<Equipment>();
+        changeGear = gladiator.GetComponent<ChangeGear>();
+        equipment = gladiator.GetComponent<Equipment>();
     }
 
     private string currentItemType;
@@ -22,7 +22,7 @@ public class EquipUI : MonoBehaviour {
         List<Item> temp = ItemDatabase.instance.itemList.Where(x => x.ItemType == itemType).ToList();
         if (currentItemType != itemType) {
             currentItemType = itemType;
-            if (equipmentScript.equippedItems[itemType] != null)
+            if (equipment.equippedItems[itemType] != null)
                 index = GetItemIndex(itemType) == temp.Count - 1 ? temp.Count != 1 ? 0 : index : GetItemIndex(itemType) + 1;
             else
                 index = 0;
@@ -30,13 +30,13 @@ public class EquipUI : MonoBehaviour {
         if (index != temp.Count) {
             for (int i = 0; i < temp.Count; i++) {
                 if (i == index) {
-                    changeGearScript.EquipItem(itemType, temp[i].Slug);
+                    changeGear.EquipItem(itemType, temp[i].Slug);
                     index++;
                     break;
                 }
             }
         } else {
-            changeGearScript.UnequipItem(temp[index - 1].ItemType);
+            changeGear.UnequipItem(temp[index - 1].ItemType);
             index = 0;
         }
 
@@ -44,7 +44,7 @@ public class EquipUI : MonoBehaviour {
 
     private int GetItemIndex(string itemType) {
         List<Item> temp = ItemDatabase.instance.itemList.Where(x => x.ItemType == itemType).ToList();
-        return temp.IndexOf(equipmentScript.equippedItems[itemType].item);
+        return temp.IndexOf(equipment.equippedItems[itemType].item);
     }
 
 }
