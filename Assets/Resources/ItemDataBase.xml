@@ -174,11 +174,11 @@
 		<Slug>shoulder_2_l</Slug>
 		<Type>LeftShoulder</Type>
 		<Prefab>L_Shoulder_2</Prefab>
-    <Color>
-      <R>1</R>
-      <G>1</G>
-      <B>1</B>
-    </Color>
+    		<Color>
+     			<R>1</R>
+			<G>1</G>
+			<B>1</B>
+		</Color>
 	</Item>
 	<Item>
 		<Name>Shoulder Armour 3 L</Name>
