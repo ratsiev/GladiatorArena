@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: d09866f506105c94cb9f12b2148f37c1
-timeCreated: 1515806027
+guid: c0335feef7d604f48aefbd6ae43d56cc
+timeCreated: 1516120230
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -1325,7 +1325,7 @@ ModelImporter:
     401314: WeaponHolder.L_end
     401316: WeaponHolder.R
     401318: WeaponHolder.R_end
-    2100000: Material
+    2100000: Material.003
     4300000: Torso_1
     9500000: //RootNode
     13700000: Torso_1
@@ -1333,7 +1333,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material
+      name: Material.003
     second: {fileID: 2100000, guid: 090a712b4fca06b46801383c28ba013c, type: 2}
   materials:
     importMaterials: 1

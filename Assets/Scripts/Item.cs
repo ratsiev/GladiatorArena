@@ -8,34 +8,23 @@ public class Item {
     public string ItemType;
     public GameObject ItemPrefab;
     public int ItemID;
+    public Color Color;
 
     public string ItemName;
     public string ItemDescription;
 
-    //public string ClothingType; //work, combat, social, naked 
     public bool Stackable;
     public Sprite ItemIcon;
 
     //constructor for facial hair, hair, weapons, and armor
-    public Item(int id, string itemName, string itemDescription, string slug, string itemType, GameObject itemPrefab) {
+    public Item(int id, string itemName, string itemDescription, string slug, string itemType, GameObject itemPrefab, Color color) {
         ItemID = id;
         ItemName = itemName;
         ItemDescription = itemDescription;
         Slug = slug;
         ItemType = itemType;
         ItemPrefab = itemPrefab;
-    }
-    //constructor for no equipment
-    public Item(int id, string itemName, string itemDescription, string slug, string itemType) {
-        ItemID = id;
-        ItemName = itemName;
-        ItemDescription = itemDescription;
-        Slug = slug;
-        ItemType = itemType;
-    }
-    //empty constructor
-    public Item() {
-        ItemID = -1;
+        Color = color;
     }
 
     public string Info() {

@@ -35,11 +35,11 @@ public class Equipment : MonoBehaviour {
 
     public void AddEquipment(Item equipmentToAdd) {
         equippedItems[equipmentToAdd.ItemType] = new EquippedItem(equipmentToAdd);
-        Wear(equippedItems[equipmentToAdd.ItemType].itemObject, equipmentToAdd.ItemType);
+        Wear(equippedItems[equipmentToAdd.ItemType].ItemObject, equipmentToAdd.ItemType);
     }
 
     public void RemoveEquipment(string equipmentToRemove) {
-        RemoveWorn(equippedItems[equipmentToRemove].itemObject);
+        RemoveWorn(equippedItems[equipmentToRemove].ItemObject);
         equippedItems[equipmentToRemove] = null;
     }
 
@@ -49,19 +49,28 @@ public class Equipment : MonoBehaviour {
 
     private void Wear(GameObject clothing, string itemType) {
         clothing = Instantiate(clothing);
-        equippedItems[itemType].itemObject = stitcher.Stitch(clothing, avatar);
+        equippedItems[itemType].ItemObject = stitcher.Stitch(clothing, avatar);
     }
 
 }
 
 public class EquippedItem {
 
-    public Item item;
-    public GameObject itemObject;
+    public Item Item;
+    public GameObject ItemObject;
 
     public EquippedItem(Item item) {
-        this.item = item;
-        itemObject = item.ItemPrefab;
+        Item = item;
+        ItemObject = item.ItemPrefab;
+    }
+
+    public void SetColor() {
+        ItemObject.GetComponentInChildren<Renderer>().material.color = Item.Color;
+    }
+
+    public void ChangeColor(Color color) {
+        Item.Color = color;
+        ItemObject.GetComponentInChildren<Renderer>().material.color = Item.Color;
     }
 
 }

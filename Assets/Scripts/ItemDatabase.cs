@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Xml;
 using System.Xml.Linq;
 using UnityEngine;
 
@@ -27,9 +28,7 @@ public class ItemDatabase : MonoBehaviour {
     }
 
     private Item NewItem(XElement item) {
-        if (item.Element("Prefab").Value == "")
-            return new Item(id, item.Element("Name").Value, item.Element("Description").Value, item.Element("Slug").Value, item.Element("Type").Value);
-        return new Item(id, item.Element("Name").Value, item.Element("Description").Value, item.Element("Slug").Value, item.Element("Type").Value, (GameObject)Resources.Load($"Gear/{item.Element("Prefab").Value}"));
+        return new Item(id, item.Element("Name").Value, item.Element("Description").Value, item.Element("Slug").Value, item.Element("Type").Value, (GameObject)Resources.Load($"Gear/{item.Element("Prefab").Value}"), SetColor(item.Element("Color")));
     }
 
     public Item FetchItemByID(int id) {
@@ -38,6 +37,10 @@ public class ItemDatabase : MonoBehaviour {
 
     public Item FetchItemBySlug(string slugName) {
         return itemList.Find(x => x.Slug == slugName);
+    }
+
+    private Color SetColor(XElement color) {
+        return new Color(XmlConvert.ToSingle(color.Element("R").Value), XmlConvert.ToSingle(color.Element("G").Value), XmlConvert.ToSingle(color.Element("B").Value));
     }
 
 }
