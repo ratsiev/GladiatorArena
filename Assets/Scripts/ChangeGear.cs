@@ -3,7 +3,7 @@
 public class ChangeGear : MonoBehaviour {
     private Equipment equipment;
 
-    private void Start() {
+    private void Awake() {
         equipment = GetComponent<Equipment>();
     }
 

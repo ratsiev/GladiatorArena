@@ -21,14 +21,14 @@ public class ItemDatabase : MonoBehaviour {
     private void LoadItems() {
         TextAsset textAsset = Resources.Load("ItemDatabase") as TextAsset;
         XDocument doc = XDocument.Parse(textAsset.text);
-        foreach(var item in doc.Descendants("Item")) {
+        foreach (var item in doc.Descendants("Item")) {
             itemList.Add(NewItem(item));
             id++;
         }
     }
 
     private Item NewItem(XElement item) {
-        return new Item(id, item.Element("Name").Value, item.Element("Description").Value, item.Element("Slug").Value, item.Element("Type").Value, (GameObject)Resources.Load($"Gear/{item.Element("Prefab").Value}"), SetColor(item.Element("Color")));
+        return new Item(id, item.Element("Name").Value, item.Element("Description").Value, item.Element("Slug").Value, item.Element("Type").Value, (GameObject)Resources.Load($"Gear/{item.Element("Prefab").Value}"));
     }
 
     public Item FetchItemByID(int id) {
@@ -37,10 +37,6 @@ public class ItemDatabase : MonoBehaviour {
 
     public Item FetchItemBySlug(string slugName) {
         return itemList.Find(x => x.Slug == slugName);
-    }
-
-    private Color SetColor(XElement color) {
-        return new Color(XmlConvert.ToSingle(color.Element("R").Value), XmlConvert.ToSingle(color.Element("G").Value), XmlConvert.ToSingle(color.Element("B").Value));
     }
 
 }

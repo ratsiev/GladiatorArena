@@ -187,9 +187,10 @@ GameObject:
   m_Component:
   - component: {fileID: 44523950}
   - component: {fileID: 44523949}
+  - component: {fileID: 44523951}
   m_Layer: 0
-  m_Name: GM
-  m_TagString: Untagged
+  m_Name: ItemManager
+  m_TagString: ItemManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -219,6 +220,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &44523951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 44523948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a99f78ae9426de44da0746e7fe1e633c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMesh: {fileID: 917366907}
 --- !u!1 &62202144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1902,6 +1915,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 793219155}
+--- !u!137 &917366907 stripped
+SkinnedMeshRenderer:
+  m_PrefabParentObject: {fileID: 13700000, guid: 77124f915b0e09f48a5c9737a5be9992,
+    type: 3}
+  m_PrefabInternal: {fileID: 1473062953}
 --- !u!1 &957142853
 GameObject:
   m_ObjectHideFlags: 0
@@ -2972,7 +2990,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3e07a0e7dd63e4e8a11e3b292bffcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  avatar: {fileID: 1218633997}
 --- !u!114 &1218633999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3091,9 +3108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be4ffc290d995dc4a97e8704fc5c10dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redSlider: {fileID: 1393499692}
-  blueSlider: {fileID: 1081468892}
-  greenSlider: {fileID: 595350951}
 --- !u!1 &1242972826
 GameObject:
   m_ObjectHideFlags: 0

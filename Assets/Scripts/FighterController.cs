@@ -12,7 +12,6 @@ public class FighterController : MonoBehaviour {
 
     private Vector3 moveDirection = Vector3.zero;
     private CharacterController controller;
-    private int jumps;
     private Animator animator;
     private const float walkSpeed = 5.5f;
     private const float runSpeed = 10.0f;

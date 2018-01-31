@@ -4,16 +4,14 @@ using System.Linq;
 
 public class Equipment : MonoBehaviour {
 
-    public GameObject avatar;
+    public Dictionary<string, Item> equippedItems;
 
-    public Dictionary<string, EquippedItem> equippedItems;
-
-    private Stitcher stitcher;
+    private MeshManager meshManager;
 
     public void Awake() {
-        stitcher = new Stitcher();
+        meshManager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<MeshManager>();
 
-        equippedItems = new Dictionary<string, EquippedItem>() {
+        equippedItems = new Dictionary<string, Item>() {
             {"Torso" , null},
             {"Head" , null},
             {"RightHand" , null},
@@ -30,47 +28,16 @@ public class Equipment : MonoBehaviour {
             {"LeftLeg2" , null},
             {"Shield" , null},
         };
-
+      
     }
 
     public void AddEquipment(Item equipmentToAdd) {
-        equippedItems[equipmentToAdd.ItemType] = new EquippedItem(equipmentToAdd);
-        Wear(equippedItems[equipmentToAdd.ItemType].ItemObject, equipmentToAdd.ItemType);
+        equippedItems[equipmentToAdd.ItemType] = equipmentToAdd;
+        meshManager.AddMesh(equipmentToAdd);
     }
 
     public void RemoveEquipment(string equipmentToRemove) {
-        RemoveWorn(equippedItems[equipmentToRemove].ItemObject);
+        meshManager.RemoveMesh(equipmentToRemove);
         equippedItems[equipmentToRemove] = null;
     }
-
-    private void RemoveWorn(GameObject wornClothing) {
-        Destroy(wornClothing);
-    }
-
-    private void Wear(GameObject clothing, string itemType) {
-        clothing = Instantiate(clothing);
-        equippedItems[itemType].ItemObject = stitcher.Stitch(clothing, avatar);
-    }
-
-}
-
-public class EquippedItem {
-
-    public Item Item;
-    public GameObject ItemObject;
-
-    public EquippedItem(Item item) {
-        Item = item;
-        ItemObject = item.ItemPrefab;
-    }
-
-    public void SetColor() {
-        ItemObject.GetComponentInChildren<Renderer>().material.color = Item.Color;
-    }
-
-    public void ChangeColor(Color color) {
-        Item.Color = color;
-        ItemObject.GetComponentInChildren<Renderer>().material.color = Item.Color;
-    }
-
 }

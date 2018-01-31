@@ -6,11 +6,6 @@
 		<Slug>helmet_1</Slug>
 		<Type>Head</Type>
 		<Prefab>Helmet_1</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Helmet 2</Name>
@@ -18,11 +13,6 @@
 		<Slug>helmet_2</Slug>
 		<Type>Head</Type>
 		<Prefab>Helmet_2</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Helmet 3</Name>
@@ -30,11 +20,6 @@
 		<Slug>helmet_3</Slug>
 		<Type>Head</Type>
 		<Prefab>Helmet_3</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Helmet 4</Name>
@@ -42,11 +27,6 @@
 		<Slug>helmet_4</Slug>
 		<Type>Head</Type>
 		<Prefab>Helmet_4</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Arm Armour 1 R</Name>
@@ -54,11 +34,6 @@
 		<Slug>arm_1_r</Slug>
 		<Type>RightArm1</Type>
 		<Prefab>R_Arm_1</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Arm Armour 2 R</Name>
@@ -66,11 +41,6 @@
 		<Slug>arm_2_r</Slug>
 		<Type>RightArm2</Type>
 		<Prefab>R_Arm_2</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Arm Armour 3 R</Name>
@@ -78,11 +48,6 @@
 		<Slug>arm_3_r</Slug>
 		<Type>RightArm1</Type>
 		<Prefab>R_Arm_3</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Shoulder Armour 1 R</Name>
@@ -90,11 +55,6 @@
 		<Slug>shoulder_1_r</Slug>
 		<Type>RightShoulder</Type>
 		<Prefab>R_Shoulder_1</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Shoulder Armour 2 R</Name>
@@ -102,11 +62,6 @@
 		<Slug>shoulder_2_r</Slug>
 		<Type>RightShoulder</Type>
 		<Prefab>R_Shoulder_2</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Shoulder Armour 3 R</Name>
@@ -114,11 +69,6 @@
 		<Slug>shoulder_3_r</Slug>
 		<Type>RightShoulder</Type>
 		<Prefab>R_Shoulder_3</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Arm Armour 1 L</Name>
@@ -126,11 +76,6 @@
 		<Slug>arm_1_l</Slug>
 		<Type>LeftArm1</Type>
 		<Prefab>L_Arm_1</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Arm Armour 2 L</Name>
@@ -138,11 +83,6 @@
 		<Slug>arm_2_l</Slug>
 		<Type>LeftArm2</Type>
 		<Prefab>L_Arm_2</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Arm Armour 3 L</Name>
@@ -150,11 +90,6 @@
 		<Slug>arm_3_l</Slug>
 		<Type>LeftArm1</Type>
 		<Prefab>L_Arm_3</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Shoulder Armour 1 L</Name>
@@ -162,11 +97,6 @@
 		<Slug>shoulder_1_l</Slug>
 		<Type>LeftShoulder</Type>
 		<Prefab>L_Shoulder_1</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Shoulder Armour 2 L</Name>
@@ -174,11 +104,6 @@
 		<Slug>shoulder_2_l</Slug>
 		<Type>LeftShoulder</Type>
 		<Prefab>L_Shoulder_2</Prefab>
-    		<Color>
-     			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Shoulder Armour 3 L</Name>
@@ -186,11 +111,6 @@
 		<Slug>shoulder_3_l</Slug>
 		<Type>LeftShoulder</Type>
 		<Prefab>L_Shoulder_3</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Right Gladius 1</Name>
@@ -198,11 +118,6 @@
 		<Slug>weapon_1_r</Slug>
 		<Type>RightHand</Type>
 		<Prefab>R_Gladius_1</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Right Pugio 1</Name>
@@ -210,11 +125,6 @@
 		<Slug>weapon_2_r</Slug>
 		<Type>RightHand</Type>
 		<Prefab>R_Pugio_1</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Left Gladius 1</Name>
@@ -222,11 +132,6 @@
 		<Slug>weapon_1_l</Slug>
 		<Type>LeftHand</Type>
 		<Prefab>L_Gladius_1</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Left Pugio 1</Name>
@@ -234,11 +139,6 @@
 		<Slug>weapon_2_l</Slug>
 		<Type>LeftHand</Type>
 		<Prefab>L_Pugio_1</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Torso 1</Name>
@@ -246,11 +146,6 @@
 		<Slug>torso_1</Slug>
 		<Type>Torso</Type>
 		<Prefab>Torso_1</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Torso 2</Name>
@@ -258,11 +153,6 @@
 		<Slug>torso_2</Slug>
 		<Type>Torso</Type>
 		<Prefab>Torso_2</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Right Leg 1</Name>
@@ -270,11 +160,6 @@
 		<Slug>leg_1_r</Slug>
 		<Type>RightLeg1</Type>
 		<Prefab>R_Leg_1</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Right Leg 2</Name>
@@ -282,11 +167,6 @@
 		<Slug>leg_2_r</Slug>
 		<Type>RightLeg1</Type>
 		<Prefab>R_Leg_2</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Right Leg 3</Name>
@@ -294,11 +174,6 @@
 		<Slug>leg_3_r</Slug>
 		<Type>RightLeg2</Type>
 		<Prefab>R_Leg_3</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Left Leg 1</Name>
@@ -306,11 +181,6 @@
 		<Slug>leg_1_l</Slug>
 		<Type>LeftLeg1</Type>
 		<Prefab>L_Leg_1</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Left Leg 2</Name>
@@ -318,11 +188,6 @@
 		<Slug>leg_2_l</Slug>
 		<Type>LeftLeg1</Type>
 		<Prefab>L_Leg_2</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Left Leg 3</Name>
@@ -330,11 +195,6 @@
 		<Slug>leg_3_l</Slug>
 		<Type>LeftLeg2</Type>
 		<Prefab>L_Leg_3</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Shield 1</Name>
@@ -342,11 +202,6 @@
 		<Slug>shield_1</Slug>
 		<Type>Shield</Type>
 		<Prefab>Shield_1</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Shield 2</Name>
@@ -354,11 +209,6 @@
 		<Slug>shield_2</Slug>
 		<Type>Shield</Type>
 		<Prefab>Shield_2</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 	<Item>
 		<Name>Shield 3</Name>
@@ -366,10 +216,5 @@
 		<Slug>shield_3</Slug>
 		<Type>Shield</Type>
 		<Prefab>Shield_3</Prefab>
-		<Color>
-			<R>1</R>
-			<G>1</G>
-			<B>1</B>
-		</Color>
 	</Item>
 </ItemDataBase>
