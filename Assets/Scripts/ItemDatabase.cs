@@ -21,7 +21,7 @@ public class ItemDatabase : MonoBehaviour {
     }
 
     private void LoadShield() {
-        TextAsset textAsset = Resources.Load("ShieldDatabase") as TextAsset;
+        TextAsset textAsset = Resources.Load("ItemDatabase") as TextAsset;
         XDocument doc = XDocument.Parse(textAsset.text);
         foreach (var item in doc.Descendants("Shield")) {
             itemList.Add(NewItem(item));
@@ -30,7 +30,7 @@ public class ItemDatabase : MonoBehaviour {
     }
 
     private void LoadWeapon() {
-        TextAsset textAsset = Resources.Load("WeaponDatabase") as TextAsset;
+        TextAsset textAsset = Resources.Load("ItemDatabase") as TextAsset;
         XDocument doc = XDocument.Parse(textAsset.text);
         foreach (var item in doc.Descendants("Weapon")) {
             itemList.Add(NewWeapon(item));
@@ -39,7 +39,7 @@ public class ItemDatabase : MonoBehaviour {
     }
 
     private void LoadArmor() {
-        TextAsset textAsset = Resources.Load("ArmorDatabase") as TextAsset;
+        TextAsset textAsset = Resources.Load("ItemDatabase") as TextAsset;
         XDocument doc = XDocument.Parse(textAsset.text);
         foreach (var item in doc.Descendants("Armor")) {
             itemList.Add(NewItem(item));

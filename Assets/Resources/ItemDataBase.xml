@@ -196,7 +196,7 @@
 	</ArmorDataBase>
 	<WeaponDataBase>
 		<Weapon>
-			<Name>Right Gladius 1</Name>
+			<Name>Right Gladius</Name>
 			<Description>Right Gladius 1</Description>
 			<Slug>weapon_1_r</Slug>
 			<EquipmentType>RightHand</EquipmentType>
@@ -205,7 +205,7 @@
 			<WeaponType>OneHanded</WeaponType>
 		</Weapon>
 		<Weapon>
-			<Name>Right Pugio 1</Name>
+			<Name>Right Pugio</Name>
 			<Description>Right Pugio 1</Description>
 			<Slug>weapon_2_r</Slug>
 			<EquipmentType>RightHand</EquipmentType>
@@ -214,7 +214,7 @@
 			<WeaponType>OneHanded</WeaponType>
 		</Weapon>
 		<Weapon>
-			<Name>Left Gladius 1</Name>
+			<Name>Left Gladius</Name>
 			<Description>Left Gladius 1</Description>
 			<Slug>weapon_1_l</Slug>
 			<EquipmentType>LeftHand</EquipmentType>
@@ -223,7 +223,7 @@
 			<WeaponType>OneHanded</WeaponType>
 		</Weapon>
 		<Weapon>
-			<Name>Left Pugio 1</Name>
+			<Name>Left Pugio</Name>
 			<Description>Left Pugio 1</Description>
 			<Slug>weapon_2_l</Slug>
 			<EquipmentType>LeftHand</EquipmentType>
