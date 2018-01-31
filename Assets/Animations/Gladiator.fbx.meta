@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 77124f915b0e09f48a5c9737a5be9992
-timeCreated: 1517367783
+timeCreated: 1517423388
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -151,13 +151,14 @@ ModelImporter:
     2100002: Clothes
     2100004: Boots
     4300000: Gladiator
-    7400000: Rig|Idle 1H
-    7400002: Rig|Idle 2H
-    7400004: Rig|Run 1H
-    7400006: Rig|Run 1H Shield
-    7400008: Rig|Run 2H
-    7400010: Rig|Walk 1H
-    7400012: Rig|Walk 2H
+    7400000: Rig|Attack 1H Shield
+    7400002: Rig|Idle 1H
+    7400004: Rig|Idle 2H
+    7400006: Rig|Run 1H
+    7400008: Rig|Run 1H Shield
+    7400010: Rig|Run 2H
+    7400012: Rig|Walk 1H
+    7400014: Rig|Walk 2H
     9500000: //RootNode
     13700000: Gladiator
   externalObjects: {}
@@ -187,6 +188,34 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations:
+    - serializedVersion: 16
+      name: Rig|Attack 1H Shield
+      takeName: Rig|Attack 1H Shield
+      firstFrame: 0
+      lastFrame: 11
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Rig|Idle 1H
       takeName: Rig|Idle 1H

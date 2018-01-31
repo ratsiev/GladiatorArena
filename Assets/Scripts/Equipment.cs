@@ -1,15 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using System.Linq;
 
 public class Equipment : MonoBehaviour {
 
     public Dictionary<string, Item> equippedItems;
-
-    private MeshManager meshManager;
+    public MeshManager meshManager;
 
     public void Awake() {
-        meshManager = GameObject.FindGameObjectWithTag("ItemManager").GetComponent<MeshManager>();
 
         equippedItems = new Dictionary<string, Item>() {
             {"Torso" , null},
@@ -32,7 +29,7 @@ public class Equipment : MonoBehaviour {
     }
 
     public void AddEquipment(Item equipmentToAdd) {
-        equippedItems[equipmentToAdd.ItemType] = equipmentToAdd;
+        equippedItems[equipmentToAdd.EquipmentType] = equipmentToAdd;
         meshManager.AddMesh(equipmentToAdd);
     }
 

@@ -380,7 +380,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 77124f915b0e09f48a5c9737a5be9992, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7
+      value: 0.082
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 77124f915b0e09f48a5c9737a5be9992, type: 3}
       propertyPath: m_TagString
@@ -579,7 +579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentSpeed: 0
   rotateSpeed: 6
-  jumpSpeed: 8
+  jumpSpeed: 10
   gravity: 20
   speedMultiplier: 1
 --- !u!114 &1543060339
@@ -593,6 +593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3e07a0e7dd63e4e8a11e3b292bffcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meshManager: {fileID: 1616419214}
 --- !u!114 &1543060340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,6 +634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 879ac9860a2ea2c4283eb9cf0434c20e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gladiator: {fileID: 1543060335}
 --- !u!4 &1616419212
 Transform:
   m_ObjectHideFlags: 0

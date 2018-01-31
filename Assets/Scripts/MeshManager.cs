@@ -33,7 +33,7 @@ public class MeshManager : MonoBehaviour {
         newMesh.transform.parent = targetMesh.transform;
         newMesh.bones = targetMesh.bones;
         newMesh.rootBone = targetMesh.rootBone;
-        currentMeshes[item.ItemType] = newMesh;
+        currentMeshes[item.EquipmentType] = newMesh;
     }
 
     public void RemoveMesh(string itemToRemove) {

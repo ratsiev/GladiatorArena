@@ -3,31 +3,16 @@ using System.Collections;
 
 public class TestEquipment : MonoBehaviour {
 
-    private GameObject gladiator;
+    public GameObject gladiator;
     private ChangeGear changeGear;
-    private Item[] defaultItems = new Item[14];
+    private string[] defaultItems = new string[] { "helmet_4", "arm_1_r", "arm_2_r", "arm_3_l", "arm_2_l", "shoulder_3_r", "shoulder_2_l", "shield_3", "weapon_1_r",
+            "torso_1", "leg_2_r", "leg_3_r", "leg_2_l", "leg_3_l" };
 
     void Start() {
-        gladiator = GameObject.FindGameObjectWithTag("Gladiator").gameObject;
         changeGear = gladiator.GetComponent<ChangeGear>();
 
-        defaultItems = new Item[] {  ItemDatabase.instance.FetchItemBySlug("helmet_4"),
-                                     ItemDatabase.instance.FetchItemBySlug("arm_1_r"),
-                                     ItemDatabase.instance.FetchItemBySlug("arm_2_r"),
-                                     ItemDatabase.instance.FetchItemBySlug("arm_3_l"),
-                                     ItemDatabase.instance.FetchItemBySlug("arm_2_l"),
-                                     ItemDatabase.instance.FetchItemBySlug("shoulder_3_r"),
-                                     ItemDatabase.instance.FetchItemBySlug("shoulder_2_l"),
-                                     ItemDatabase.instance.FetchItemBySlug("shield_3"),
-                                     ItemDatabase.instance.FetchItemBySlug("weapon_1_r"),
-                                     ItemDatabase.instance.FetchItemBySlug("torso_1"),
-                                     ItemDatabase.instance.FetchItemBySlug("leg_2_r"),
-                                     ItemDatabase.instance.FetchItemBySlug("leg_3_r"),
-                                     ItemDatabase.instance.FetchItemBySlug("leg_2_l"),
-                                     ItemDatabase.instance.FetchItemBySlug("leg_3_l")};
-
-        foreach (Item item in defaultItems) {
-            changeGear.EquipItem(item.ItemType, item.Slug);
+        foreach (string item in defaultItems) {
+            changeGear.EquipItem(item);
         }
 
     }

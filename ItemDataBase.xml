@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ItemDataBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ArmorDataBase>
+    <Armor>
+      <Name>Armor</Name>
+      <Description>Armor</Description>
+      <Slug>Armor</Slug>
+      <EquipmentType>Armor</EquipmentType>
+      <ItemType>Armor</ItemType>
+      <Prefab>Armor</Prefab>
+    </Armor>    
+  </ArmorDataBase>	
+  <WeaponDataBase>
+    <Weapon>
+      <Name>Weapon</Name>
+      <Description>Weapon</Description>
+      <Slug>Weapon</Slug>
+      <EquipmentType>Weapon</EquipmentType>
+      <ItemType>Weapon</ItemType>
+      <Prefab>Weapon</Prefab>
+      <WeaponType>OWeapon</WeaponType>
+    </Weapon>    
+  </WeaponDataBase>
+  <ShieldDataBase>
+    <Shield>
+      <Name>Shield</Name>
+      <Description>Shield</Description>
+      <Slug>Shield</Slug>
+      <EquipmentType>Shield</EquipmentType>
+      <ItemType>Shield</ItemType>
+      <Prefab>Shield</Prefab>
+    </Shield>
+  </ShieldDataBase>
+</ItemDataBase>
+
+
