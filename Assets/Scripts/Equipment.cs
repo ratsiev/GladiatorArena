@@ -1,40 +1,39 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System;
+using System.Linq;
 
 public class Equipment : MonoBehaviour {
 
-    public Dictionary<string, Item> equippedItems;
-    public MeshManager meshManager;
+    public static string[] layers = new string[] { "First", "Second" };
 
-    public void Awake() {
+    public Dictionary<string, object> items;
+    public Dictionary<string, Weapon> weapons;
+    public Dictionary<string, Dictionary<string, Armor>> armor;
+    public Shield equippedShield;
+    private EquipmentManager manager;
 
-        equippedItems = new Dictionary<string, Item>() {
-            {"Torso" , null},
-            {"Head" , null},
-            {"RightHand" , null},
-            {"RightArm1" , null},
-            {"RightArm2" , null},
-            {"RightShoulder", null},
-            {"LeftHand" , null},
-            {"LeftArm1" , null},
-            {"LeftArm2" , null},
-            {"LeftShoulder" , null},
-            {"RightLeg1", null},
-            {"RightLeg2" , null},
-            {"LeftLeg1" , null},
-            {"LeftLeg2" , null},
-            {"Shield" , null},
-        };
-      
+    private void Awake() {
+        manager = GetComponent<EquipmentManager>();
     }
 
-    public void AddEquipment(Item equipmentToAdd) {
-        equippedItems[equipmentToAdd.EquipmentType] = equipmentToAdd;
-        meshManager.AddMesh(equipmentToAdd);
+    public void Equip(EquippableItem item) {
+        manager.AddEquipment(item);       
     }
 
-    public void RemoveEquipment(string equipmentToRemove) {
-        meshManager.RemoveMesh(equipmentToRemove);
-        equippedItems[equipmentToRemove] = null;
+    public void Unequip(EquippableItem equipmentToRemove) {
+        manager.RemoveEquipment(equipmentToRemove);
     }
+
+    public List<EquippableItem> EquippedItems {
+        get {
+            List<EquippableItem> temp = new List<EquippableItem>();
+            temp.AddRange(weapons.Select(kvp => kvp.Value as EquippableItem).Where(item => item != null).ToList());
+            layers.ToList().ForEach(layer => temp.AddRange(armor[layer].Select(kvp => kvp.Value as EquippableItem).Where(item => item != null).ToList()));
+            if (equippedShield != null)
+                temp.Add(equippedShield as EquippableItem);
+            return temp;
+        }
+    }
+
 }

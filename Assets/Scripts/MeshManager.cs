@@ -1,44 +1,50 @@
-﻿using UnityEngine;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using UnityEngine;
 
 public class MeshManager : MonoBehaviour {
 
     public SkinnedMeshRenderer targetMesh;
-    public Dictionary<string, SkinnedMeshRenderer> currentMeshes;
+    public Dictionary<string, Dictionary<string, SkinnedMeshRenderer>> currentMeshes;
 
     private void Awake() {
-
-        currentMeshes = new Dictionary<string, SkinnedMeshRenderer>() {
-            {"Torso" , null},
-            {"Head" , null},
-            {"RightHand" , null},
-            {"RightArm1" , null},
-            {"RightArm2" , null},
-            {"RightShoulder", null},
-            {"LeftHand" , null},
-            {"LeftArm1" , null},
-            {"LeftArm2" , null},
-            {"LeftShoulder" , null},
-            {"RightLeg1", null},
-            {"RightLeg2" , null},
-            {"LeftLeg1" , null},
-            {"LeftLeg2" , null},
-            {"Shield" , null},
-        };
-
+        currentMeshes = new Dictionary<string, Dictionary<string, SkinnedMeshRenderer>>();
+        CreateMeshLayers();
     }
 
-    public void AddMesh(Item item) {
-        SkinnedMeshRenderer newMesh = Instantiate(item.ItemPrefab.GetComponentInChildren<SkinnedMeshRenderer>());
+    public void AddMesh(EquippableItem item, string layer) {
+        SkinnedMeshRenderer newMesh = Instantiate(item.Prefab.GetComponentInChildren<SkinnedMeshRenderer>());
         newMesh.transform.parent = targetMesh.transform;
         newMesh.bones = targetMesh.bones;
         newMesh.rootBone = targetMesh.rootBone;
-        currentMeshes[item.EquipmentType] = newMesh;
+        currentMeshes[layer][item.EquipmentType] = newMesh;
     }
 
-    public void RemoveMesh(string itemToRemove) {
+    public void RemoveMesh(string itemToRemove, string layer) {
         if (currentMeshes[itemToRemove] != null)
-            Destroy(currentMeshes[itemToRemove].gameObject);
+            Destroy(currentMeshes[layer][itemToRemove].gameObject);
+    }
+
+    private void CreateMeshLayers() {
+        Equipment.layers.ToList().ForEach(x => currentMeshes.Add(x, new Dictionary<string, SkinnedMeshRenderer>() {
+            {"Torso" , null},
+            {"Head" , null},
+            {"RightForearm" , null},
+            {"RightArm" , null},
+            {"RightShoulder", null},
+            {"LeftForearm" , null},
+            {"LeftArm" , null},
+            {"LeftShoulder" , null},
+            {"RightLeg", null},
+            {"LeftLeg" , null},
+            {"Pants" , null},
+            {"RightHand" , null},
+            {"LeftHand" , null},
+            {"Shield",null}
+        }));
     }
 
 }

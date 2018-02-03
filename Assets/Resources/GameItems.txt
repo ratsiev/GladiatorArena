@@ -1,0 +1,308 @@
+[Armor]
+Places	UpperRightArm,LowerRightArm
+Layer	First
+ArmorRating	1.5
+Weight	0.8
+Health	100
+EquipmentType	RightForearm
+ID	armor_1_r
+Name	Cloth Arm Protection
+Description	Not specified
+Prefab	armor_1_r
+Icon	armor_1
+Price	15
+Type	Light
+
+[Armor]
+Places	UpperLeftArm,LowerLefttArm
+Layer	First
+ArmorRating	1.5
+Weight	0.8
+Health	100
+EquipmentType	LeftForearm
+ID	armor_1_l
+Name	Cloth Arm Protection
+Description	Not specified
+Prefab	armor_1_l
+Icon	armor_1
+Price	15
+Type	Light
+
+[Armor]
+Places	LowerLefttArm
+Layer	Second
+ArmorRating	1.5
+Weight	1.2
+Health	100
+EquipmentType	LeftForearm
+ID	armor_2_l
+Name	Leather Guantlet
+Description	Not specified
+Prefab	armor_2_l
+Icon	armor_2
+Price	25
+Type	Light
+
+[Armor]
+Places	LowerRightArm
+Layer	Second
+ArmorRating	1.5
+Weight	1.2
+Health	100
+EquipmentType	RightForearm
+ID	armor_2_r
+Name	Leather Guantlet
+Description	Not specified
+Prefab	armor_2_r
+Icon	armor_2
+Price	25
+Type	Light
+
+[Armor]
+Places	LowerRightArm
+Layer	First
+ArmorRating	1.5
+Weight	1.1
+Health	100
+EquipmentType	RightForearm
+ID	armor_3_r
+Name	Leather Brace
+Description	Not specified
+Prefab	armor_3_r
+Icon	armor_3
+Price	20
+Type	Light
+
+[Armor]
+Places	LowerLefttArm
+Layer	First
+ArmorRating	1.5
+Weight	1.1
+Health	100
+EquipmentType	LeftForearm
+ID	armor_3_l
+Name	Leather Brace
+Description	Not specified
+Prefab	armor_3_l
+Icon	armor_3
+Price	20
+Type	Light
+
+[Armor]
+Places	Head
+Layer	Second
+ArmorRating	4.6
+Weight	3.5
+Health	100
+EquipmentType	Head
+ID	armor_4
+Name	Leather Brace
+Description	Not specified
+Prefab	armor_4
+Icon	armor_4
+Price	30
+Type	Heavy
+
+[Armor]
+Places	RightLeg,RightThigh
+Layer	First
+ArmorRating	1.5
+Weight	0.9
+Health	100
+EquipmentType	RightLeg
+ID	armor_5_r
+Name	Lower Cloth Protection
+Description	Not specified
+Prefab	armor_5_r
+Icon	armor_5
+Price	20
+Type	Light
+
+[Armor]
+Places	LeftLeg,LeftThigh
+Layer	First
+ArmorRating	1.5
+Weight	0.9
+Health	100
+EquipmentType	LeftLeg
+ID	armor_5_l
+Name	Lower Cloth Protection
+Description	Not specified
+Prefab	armor_5_l
+Icon	armor_5
+Price	20
+Type	Light
+
+[Armor]
+Places	LeftLeg
+Layer	Second
+ArmorRating	2.6
+Weight	1.9
+Health	100
+EquipmentType	LeftLeg
+ID	armor_6_l
+Name	Leather Shin Armor
+Description	Not specified
+Prefab	armor_6_l
+Icon	armor_6
+Price	25
+Type	Medium
+
+[Armor]
+Places	RightLeg
+Layer	Second
+ArmorRating	2.6
+Weight	1.9
+Health	100
+EquipmentType	RightLeg
+ID	armor_6_r
+Name	Leather Shin Armor
+Description	Not specified
+Prefab	armor_6_r
+Icon	armor_6
+Price	25
+Type	Medium
+
+[Armor]
+Places	RightShoulder
+Layer	First
+ArmorRating	2
+Weight	0.4
+Health	100
+EquipmentType	RightShoulder
+ID	armor_7_r
+Name	Leather Pauldron
+Description	Not specified
+Prefab	armor_7_r
+Icon	armor_7
+Price	25
+Type	Medium
+
+[Armor]
+Places	LeftShoulder
+Layer	First
+ArmorRating	2
+Weight	0.4
+Health	100
+EquipmentType	LeftShoulder
+ID	armor_7_l
+Name	Leather Pauldron
+Description	Not specified
+Prefab	armor_7_l
+Icon	armor_7
+Price	25
+Type	Medium
+
+[Armor]
+Places	Torso
+Layer	First
+ArmorRating	2.8
+Weight	1.3
+Health	100
+EquipmentType	Torso
+ID	armor_8
+Name	Leather War Belt
+Description	Not specified
+Prefab	armor_8
+Icon	armor_8
+Price	30
+Type	Medium
+
+[Shield]
+DefensePoints	10
+Weight	10
+Health	100
+EquipmentType	Shield
+ID	shield_1
+Name	Square Shield
+Description	Not specified
+Prefab	shield_1
+Icon	shield_1
+Price	32
+Type	Heavy
+
+[Weapon]
+Damage	20
+Speed	1
+Range	1
+DamageType	slashDamage,pierceDamage
+Grip	OneHanded
+Weight	1.2
+Health	100
+EquipmentType	RightHand
+ID	weapon_1_r
+Name	Gladius
+Description	Not specified
+Prefab	weapon_1_r
+Icon	weapon_1
+Price	25
+Type	Sword
+
+[Weapon]
+Damage	20
+Speed	1
+Range	1
+DamageType	slashDamage
+Grip	TwoHanded
+Weight	2.5
+Health	100
+EquipmentType	RightHand
+ID	weapon_2
+Name	Dane Axe
+Description	Not specified
+Prefab	weapon_2
+Icon	weapon_2
+Price	30
+Type	Axe
+
+[Weapon]
+Damage	20
+Speed	1
+Range	1
+DamageType	bluntDamage
+Grip	OneHanded
+Weight	1.2
+Health	100
+EquipmentType	LeftHand
+ID	weapon_3_l
+Name	Steel Mace
+Description	Not specified
+Prefab	weapon_3_l
+Icon	weapon_3
+Price	30
+Type	Mace
+
+[Weapon]
+Damage	20
+Speed	1
+Range	1
+DamageType	slashDamage,pierceDamage
+Grip	OneHanded
+Weight	1.2
+Health	100
+EquipmentType	RightHand
+ID	weapon_4_r
+Name	Pugio
+Description	Not specified
+Prefab	weapon_4_r
+Icon	weapon_4
+Price	30
+Type	Dagger
+
+[Weapon]
+Damage	20
+Speed	1
+Range	1
+DamageType	slashDamage,pierceDamage
+Grip	TwoHanded
+Weight	1.26
+Health	100
+EquipmentType	RightHand
+ID	weapon_5
+Name	Long Sword
+Description	Not specified
+Prefab	weapon_5
+Icon	weapon_5
+Price	30
+Type	Sword
+

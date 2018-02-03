@@ -6,7 +6,6 @@ public class FighterController : MonoBehaviour {
 
     public float currentSpeed;
     public float rotateSpeed = 6.0f;
-    public float jumpSpeed = 10.0f;
     public float gravity = 20.0f;
     public float speedMultiplier = 1.0f;
 
@@ -28,13 +27,11 @@ public class FighterController : MonoBehaviour {
             moveDirection = new Vector3(0, 0, Input.GetAxis("Vertical"));
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection *= currentSpeed * speedMultiplier;
-            moveDirection.y = Input.GetButton("Jump") ? jumpSpeed : moveDirection.y - gravity * Time.deltaTime;
         }
 
         transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
-        animator.SetBool("Jumping", !controller.isGrounded);
         animator.SetFloat("Speed", currentSpeed);
         animator.SetBool("Attacking", Input.GetButton("Fire1"));
 

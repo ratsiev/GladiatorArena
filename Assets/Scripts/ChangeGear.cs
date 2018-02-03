@@ -7,19 +7,20 @@ public class ChangeGear : MonoBehaviour {
         equipment = GetComponent<Equipment>();
     }
 
-    public void EquipItem(string itemSlug) {
-        Item item = ItemDatabase.instance.FetchItemBySlug(itemSlug);
-        UnequipItem(item.EquipmentType);
-        equipment.AddEquipment(item);
+    public void EquipItem(string id) {
+        EquippableItem item = (EquippableItem)GameItemLoader.instance.FetchItemByID(id);
+        UnequipItem(item.ID);
+        equipment.Equip(item);
     }
 
-    public void UnequipItem(string equipmentType) {
-        if (WearingItem(equipmentType))
-            equipment.RemoveEquipment(equipmentType);
+    public void UnequipItem(string id) {
+        EquippableItem item = (EquippableItem)GameItemLoader.instance.FetchItemByID(id);
+        if (WearingItem(item))
+            equipment.Unequip(item);
     }
 
-    private bool WearingItem(string equipmentType) {
-        return equipment.equippedItems[equipmentType] != null;
+    private bool WearingItem(EquippableItem item) {
+        return equipment.EquippedItems.Contains(item);
     }
 
 }
